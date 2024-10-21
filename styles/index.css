@@ -1,0 +1,42 @@
+body {
+  background-color: #e7ccfa; /* Morado pastel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  }
+  
+  .invitation-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+  
+  
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .real-invitation {
+    background-color: #55aa58;
+    color: white;
+  }
+  
+  .joke {
+    background-color: #f84f4f;
+    color: white;
+  }
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Especial</title>
+  <link rel="stylesheet" href="styles/carta.css">
+</head>
+<body>
+  <h1 class="titulo">Holi lindo</h1>
+  <div class="carta-container">
+    <div class="carta cerrada" onclick="toggleCarta()">
+      <div class="frente">
+        <p>📩 Haz clic para abrir la carta</p>
+      </div>
+      <div class="atras" id="contenido-carta">
+        <h1>¡Nos vemos!</h1>
+        <p>📅 <strong>Fecha:</strong> Domingo 03 de Noviembre</p>
+        <p>🕒 <strong>Hora:</strong> 12:00 PM</p>
+        <p>📍 <strong>Lugar:</strong> El mismo dia te lo digo jeje</p>
+        <button class="joke" onclick="alert('¡Es una cita ❤️!');">Confirmar</button>
+    </div>
+</div>
+</div>
+
+  <script>
+    let abierta = false;
+
+    function toggleCarta() {
+      const carta = document.querySelector('.carta');
+      carta.setAttribute('aria-expanded', !abierta);
+      carta.classList.toggle('abierta');
+      abierta = !abierta;
+    }
+  </script>
+</body>
+</html>
